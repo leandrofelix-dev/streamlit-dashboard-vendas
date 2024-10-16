@@ -1,0 +1,2 @@
+Para executar o projeto, use o streamlit:
+  python3 -m streamlit run ./main.py
