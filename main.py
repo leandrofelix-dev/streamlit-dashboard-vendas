@@ -19,7 +19,7 @@ st.sidebar.markdown("---")
 
 dados_vendas["Mes"] = dados_vendas["Data"].apply(lambda x: f"{x.year}-{x.month}")
 
-mes_selecionado = st.sidebar.selectbox("Selecione o Mês", dados_vendas["Mes"].unique())
+mes_selecionado = st.sidebar.selectbox("Mês", dados_vendas["Mes"].unique())
 
 dados_filtrados = dados_vendas[dados_vendas["Mes"] == mes_selecionado]
 
